@@ -10,6 +10,6 @@ export const wishlists = pgTable("wishlist", {
     releaseDate: text("release_date"),
     poster: text("poster"),
     mediaType: text("media_type"),
-    userId: uuid("user").references(() => user.id).notNull(),
+    userId: uuid("user_id").references(() => user.id).notNull(),
     createdAt: timestamp("create_at").defaultNow()
 })

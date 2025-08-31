@@ -7,10 +7,10 @@ export const books = pgTable("book", {
     id: uuid("id").primaryKey().defaultRandom(),
     name: text("name"),
     writer: text("writer"),
-    date: text("release_date"),
+    date: text("date"),
     totalPage: text("total_page"),
     totalDays: text("total_days"),
     type: text("type"),
-    userId: uuid("user").references(() => user.id).notNull(),
+    userId: uuid("user_id").references(() => user.id).notNull(),
     createdAt: timestamp("create_at").defaultNow()
 })

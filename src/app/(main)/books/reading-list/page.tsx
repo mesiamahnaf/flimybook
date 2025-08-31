@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const Page = async () => {
     //Trpc
     void trpc.users.count.prefetch();
-    void trpc.book.list.prefetchInfinite({ search: "", limit: 12, cursor: 1 });
+    await trpc.book.list.prefetchInfinite({ search: "", limit: 12, cursor: 1 });
 
     return (
         <section className="mt-[100px]">

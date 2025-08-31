@@ -8,6 +8,20 @@
       "when": 1756648764491,
       "tag": "0000_futuristic_celestials",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1756650545970,
+      "tag": "0001_closed_unus",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1756650827351,
+      "tag": "0002_fancy_otto_octavius",
+      "breakpoints": true
     }
   ]
 }
