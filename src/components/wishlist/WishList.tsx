@@ -25,7 +25,7 @@ const WishList = () => {
                             <p className="absolute top-0 left-0 bg-indigo-900 text-white capitalize text-sm font-medium px-1">{item.mediaType}</p>
                         </div>
                         <div className="basis-[92%] lg:basis-[92%] md:basis-[86%] lsm:basis-[84%] msm:basis-[82%] sm:basis-[72%] xxs:basis-[70%]">
-                            <Link href={`https://1hd.to/search?keyword=${item.name}`} target="_blank" className="text-2xl w-max font-bold mb-0.5">{item.name}</Link>
+                            <Link href={`https://1hd.gg/search?keyword=${item.name?.replaceAll(" ", "+")}`} target="_blank" className="text-2xl w-max font-bold mb-0.5">{item.name}</Link>
                             <p className="text-base"><span className="font-bold">Released: </span>{moment(item.releaseDate).format("DD MMM YYYY")}</p>
                             <Buttons item={item} />
                         </div>
